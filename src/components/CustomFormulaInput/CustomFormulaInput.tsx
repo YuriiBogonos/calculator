@@ -85,7 +85,7 @@ export const CustomFormulaInput = () => {
       expression = expression.replace(/%/g, "/100");
       setResult(evaluateExpression(expression));
     } catch (error) {
-      setErrorMessage(error.message);
+      setErrorMessage(error.message as string);
     }
   };
 
